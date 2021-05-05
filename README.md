@@ -1,6 +1,7 @@
 # P316-05-05-21
 
 Oxumaq:
+
 https://www.tutorialsteacher.com/core/first-aspnet-core-application
 
 https://www.tutorialsteacher.com/core/aspnet-core-application-project-structure
