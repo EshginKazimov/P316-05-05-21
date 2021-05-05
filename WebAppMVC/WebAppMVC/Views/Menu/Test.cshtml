@@ -1,0 +1,22 @@
+﻿@*<h1>Hello @ViewData["Name"] @ViewBag.Surname @TempData["Age"]</h1>*@
+
+@*@model List<Student>*@
+
+@{
+    //List<Student> students = Model;
+    TestViewModel testViewModel = Model;
+    //List<Student> students = testViewModel.Students;
+    List<Student> students = (Model as TestViewModel).Students;
+}
+
+<ul>
+    @*@foreach (Student item in Model)*@
+    @*@foreach (Student item in testViewModel.Students)*@
+    @foreach (Student item in students)
+    {
+        @*<li>@item.Id @item.Name @item.Surname @item.Age</li>*@
+        <li>@(item.Id + " " + item.Name + " " + item.Surname + " " + item.Age)</li>
+    }
+</ul>
+
+<h1>Group: @testViewModel.Group</h1>
